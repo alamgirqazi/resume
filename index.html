@@ -1,3 +1,5 @@
+this is my code, sometimes it doesnot work on loading first time. how to fix it
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -5,29 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Alamgir Munir Qazi - Resume</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script>
-      function loadIframe() {
-        var iframe = document.querySelector("iframe");
-        if (!iframe.src) {
-          iframe.src =
-            "https://drive.google.com/viewerng/viewer?embedded=true&url=https://github.com/alamgirqazi/resume/raw/master/Alamgir_Munir_Qazi-resume.pdf#toolbar=0&scrollbar=0";
-        } else {
-          // Attempt to reload the iframe if it's already set but failed to load
-          setTimeout(function () {
-            iframe.src = ""; // Clear the current src
-            loadIframe(); // Recursively call loadIframe to reset the src
-          }, 500); // Wait half a second before trying again
-        }
-      }
-
-      window.onload = loadIframe;
-    </script>
   </head>
-  <body onload="loadIframe()">
+  <body>
     <div>
       <iframe
         style="height: 100vh"
-        src=""
+        src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://github.com/alamgirqazi/resume/raw/master/Alamgir_Munir_Qazi-resume.pdf#toolbar=0&scrollbar=0"
         frameborder="0"
         scrolling="auto"
         height="100%"
